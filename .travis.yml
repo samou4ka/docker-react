@@ -3,7 +3,7 @@ services:
   - docker
 
 befor_install:
-  - docker build -t samouo4ka/docker-react -f Dockerfile.dev .
+  - docker build -t samou4ka/docker-react -f Dockerfile.dev .
 
 script:
   - docker run -e CI=true samou4ka/docker-react npm run test
